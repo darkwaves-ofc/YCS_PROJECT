@@ -1,0 +1,40 @@
+.backdrop {
+  position: absolute;
+  border-radius: 0.7rem;
+  display: flex;
+  width: 100%;
+  min-height: 129%;
+  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(0, 0, 0,0.5);
+}
+
+.confirmation_window {
+  align-self: center;
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
+  background-color: rgb(255, 255, 255);
+}
+.replace_warning {
+  margin-bottom: 2rem;
+}
+.action_btn_row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  margin-bottom: 1rem;
+  min-height: 2rem;
+  width: 6rem;
+  border-radius: 0.2rem;
+  padding: 0rem 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 1px 1px;
+}
+.cancel_btn {
+  background-color: #dc1414;
+}
+.save_btn {
+  background-color: rgb(36, 160, 237);
+}

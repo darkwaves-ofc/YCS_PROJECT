@@ -1,0 +1,25 @@
+.navItem {
+  padding: 0.3rem 1.3rem;
+  width: 100%;
+  max-width: 14rem;
+  border-bottom: 3px solid transparent;
+  text-align: center;
+}
+
+.navItem {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+
+
+@media screen and (min-width: 924px) {
+  .navList {
+    margin-right: 1rem;
+  }
+  .navItem:hover {
+    border-bottom: 3px solid rgb(255, 187, 0);
+  }
+}

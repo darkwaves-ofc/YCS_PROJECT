@@ -1,42 +1,229 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html {
+  scroll-behavior: smooth;
+  font-size: 1.2rem;
+  font-size: 3.8vw;
+  font-family: "Imprima", sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+:root {
+  /* ===== Colors ===== */
+  --primary-color: #0e4bf1;
+  --panel-color: #fff;
+  --text-color: #000;
+  --black-light-color: #707070;
+  --border-color: #e6e5e5;
+  --toggle-color: #3a3b3c;
+  --box1-color: #4da3ff;
+  --box2-color: #ffe6ac;
+  --box3-color: #e7d1fc;
+  --title-icon-color: #fff;
+  --warn-color: #13c3c9ce;
+  --primary-color2: #0b46e9dc;
+  /* ====== Images ======= */
+  --profile-pic: url(../public/assets/img/pexels-muhammad-khairul-iddin-adnan-808510.jpg);
+
+  /* ====== Transition ====== */
+  --tran-05: all 0.5s ease;
+  --tran-03: all 0.3s ease;
+  --tran-03: all 0.2s ease;
+  --card-color: radial-gradient(
+    circle,
+    rgba(219, 219, 219, 0.5438550420168067) 8%,
+    rgba(213, 213, 213, 0.3841911764705882) 65%
+  );
+  --box-shadow: 2px 5px 323px -81px rgba(38, 20, 20, 0.75);
+  --main-hue: 208;
+  --main-color: hsl(var(--main-hue), 92%, 54%);
+  --nav-color: hsl(var(--main-hue), 17%, 79%);
+  --main-color-hover: hsl(var(--main-hue), 77%, 48%);
+  --light-text-color: #9ca7b6;
+  --input-bg: hsl(var(--main-hue), 50%, 50%, 6.5%);
+  --input-bg-hover: hsl(var(--main-hue), 50%, 50%, 14%);
+  --input-text: #8c9aaf;
+  --light-main-color: hsl(var(--main-hue), 91%, 55%);
+  /* Comments */
+  --Moderate-blue: hsl(238, 40%, 52%);
+  --Soft-Red: hsl(358, 79%, 66%);
+  --Light-grayish-blue: hsl(239, 57%, 85%);
+  --Pale-red: hsl(357, 100%, 86%);
+  --Dark-blue: hsl(212, 24%, 26%);
+  --Grayish-Blue: hsl(211, 10%, 45%);
+  --Light-gray: hsl(223, 19%, 93%);
+  --Very-light-gray: hsl(228, 33%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  min-height: 100vh;
+}
+body.dark {
+  --primary-color2: #0e4bf1;
+  --primary-color: #3a3b3c;
+  --panel-color: #242526;
+  --text-color: #ccc;
+  --black-light-color: #ccc;
+  --border-color: #4d4c4c;
+  --toggle-color: #fff;
+  --box1-color: #3a3b3c;
+  --box2-color: #3a3b3c;
+  --box3-color: #3a3b3c;
+  --title-icon-color: #ccc;
+}
+
+/* === Custom Scroll Bar CSS === */
+::-webkit-scrollbar {
+  width: 2px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-color);
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--toggle-color);
+}
+body.dark::-webkit-scrollbar-thumb:hover,
+body.dark .activity-data::-webkit-scrollbar-thumb:hover {
+  background: #3a3b3c;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 1.4em;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 1.3rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 464px) {
+  html {
+    font-size: 4vw;
   }
 }
+/* @media (max-width: 320px) {
+    html {
+        font-size: 4vw;
+    }
+} */
 
-.card {
-  padding: 2em;
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
 }
 
-.read-the-docs {
-  color: #888;
+/* Flex Utilities */
+.flex {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-row-end {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.flex-row-start {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-col-bet {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.flex-row-aro {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.flex-row-bet {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* Grid Utilities */
+.grid {
+  display: grid !important;
+}
+
+.grid-gap {
+  gap: 1rem !important; /* Adjust gap size as needed */
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.grid-cols-auto {
+  grid-template-columns: auto !important;
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, 1fr) !important;
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, 1fr) !important;
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, 1fr) !important;
+}
+
+.grid-rows-auto {
+  grid-template-rows: auto !important;
 }

@@ -1,0 +1,9 @@
+@media(min-Width : 1000px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5rem;
+      gap: 8vw;
+    }
+  }
+  

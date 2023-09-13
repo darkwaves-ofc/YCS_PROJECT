@@ -1,0 +1,70 @@
+.hamburgerRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hamburger {
+    display: grid;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3";
+    gap: 0.3125rem;
+    height: 2.5rem;
+    width: 2.625rem;
+    padding: 0.5rem;
+    margin: 0.3125rem 0.5rem;
+    border-radius: 0.3125rem;
+    border: 1px solid black;
+}
+
+.hamburger > .bar {
+    display: block;
+    width: 1.5625rem;
+    height: 0.1875rem;
+    border-radius: 0.3125rem;
+    background-color: rgb(255, 153, 0);
+    justify-self: center;
+    transition: 0.3s ease-in-out;
+    
+}
+.hamburger > .b {
+    grid-area: 2;
+    grid-column: 1/2;
+}
+
+.hamburger > .slant {
+    grid-area: 2;
+    grid-column: 1/2;
+    width: 0px;
+    justify-self: center;
+    transition: 0.2s ease-in-out;
+}
+.hamburger > .horizontal {
+    transition-delay: 0.2s;
+}
+
+.hamburger > .d {
+    transform: rotate(45deg);
+}
+.hamburger > .e {
+    transform: rotate(-45deg);
+}
+
+.hamburgerActive > .horizontal {
+    width: 0px;
+    transition-delay: 0s;
+}
+.hamburgerActive > .slant {
+    width: 1.5625rem;
+    transition-delay: 0.3s;
+}
+
+
+
+@media screen and (min-width : 924px) {
+    .hamburgerRow {
+        display: none;
+    }
+}

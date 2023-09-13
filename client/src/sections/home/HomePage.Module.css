@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Sevillana&display=swap');
+
+/* ........................... */
+
+:root {
+    --defaultFont: 'Imprima', sans-serif;
+}
+
+
+/* ............................. */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.purpleText {
+    color: #524FD5;
+}
+
+
+/* .............................
+
+div.heading {
+    display: flex;
+    max-width: 30rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.slogon {
+    text-align: end;
+    font-family: 'Sevillana', cursive;
+    color: rgb(226, 167, 4);
+}
+
+
+img.logo {
+    width: 6rem;
+}
+
+.h1 {
+    font-size: 3rem;
+    font-family: 'Chivo Mono', monospace;
+    font-style: italic;
+    padding-top: 2rem;
+}
+.header {
+    background-color: #FFF5F1;
+    margin-bottom: 4rem;
+}
+/* ............................. */
+
+.description {
+    margin: auto;
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    margin-bottom: 4rem;
+}
+
+.description>img {
+    max-width: 300px;
+}
+
+.description>p {
+    font-size: 1.8rem;
+    font-family: var(--defaultFont);
+    text-align: center;
+}
+
+
+/*............................ */
+
+.links_heading {
+    margin-left: 1rem;
+    font-family: var(--defaultFont);
+}
+
+
+/* ............................. */
+
+.link_img>img {
+    max-width: 200px;
+    margin: 1rem 0rem 0rem 1rem;
+}
+
+.link_description {
+    margin-left: 1.3rem;
+    padding: 1rem;
+    font-family: var(--defaultFont);
+}
+
+.link_description>h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.link_description>p {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.link_description>a {
+    margin-left: 0.5rem;
+}
+
+.link_description>a>button {
+    min-width: 6rem;
+    min-height: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background-color: #524FD5;
+}
+
+.writer_link {
+    max-width: 530px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 1.7rem;
+    margin: 2rem 1rem;
+    background-color: #FFF5F1;
+}
+
+
+/* ............................. */
+
+@media (max-width: 540px) {
+    .description > img {
+        width: 90vw;
+        max-width: 300px;
+    }
+    .description {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    div.logo {
+        margin-right: 1rem;
+    }
+    .link_img>img {
+        max-width: 130px;
+        margin-bottom: 2rem;
+    }
+    .link_description {
+        margin-left: 0rem;
+    }
+    .link_description > p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .logo>img {
+        width: 200px;
+    }
+    .description>img {
+        max-width: 400px;
+    }
+    .description {
+        max-width: 900px;
+    }
+    .link_img>img {
+        max-width: 300px;
+    }
+    .link_description>h3 {
+        font-size: 3.8rem;
+        margin-bottom: 2rem;
+    }
+    .link_description>a>button {
+        min-width: 7rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+    .link_description>a {
+        margin-left: 40%;
+    }
+    .writer_link {
+        max-width: 45rem;
+    }
+}

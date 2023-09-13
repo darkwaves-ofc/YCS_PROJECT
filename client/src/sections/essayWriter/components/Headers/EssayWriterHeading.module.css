@@ -1,0 +1,22 @@
+.logo {
+    max-width: 4rem;
+    margin-right: 1rem;
+}
+
+.productName {
+    font-size: 2.1rem;
+}
+
+.companyName {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: goldenrod;
+    transform: translate(-2rem,1.5rem);
+}
+.heading {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: auto auto 0rem;
+    align-items: center;
+    justify-content: center;
+}

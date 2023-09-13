@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Roboto:wght@300&display=swap');
+
+.purpleTxt {
+    color: #524FD5;
+}
+
+
+.logo {
+    max-width: 4rem;
+    margin-right: 2rem;
+}
+
+.productName {
+    font-size: 2rem;
+}
+
+.companyName {
+    font-weight: 700;
+    font-size: 1rem;
+    color: goldenrod;
+    transform: translate(-2rem,1.5rem);
+}
+.heading {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: auto auto 0rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentImg {
+   max-width: 15rem;
+   display: block;
+   margin: auto;
+   margin-bottom: 1rem;
+}
+
+.intro {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.description {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background-color: #524FD5;
+    color: #ffffff;
+    border: none;
+    width: 8rem;
+    min-height: 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+.IntroBlock {
+    background-color: #FFF5F1;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}

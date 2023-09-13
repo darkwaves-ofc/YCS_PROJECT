@@ -1,0 +1,113 @@
+.drive_slot {
+  margin-bottom: 2rem;
+}
+.filled_slot {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: rgb(245, 222, 179);
+}
+
+.empty_slot {
+  padding: 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  background-color: rgb(245, 222, 179, 0.5);
+  color: rgb(110, 109, 109);
+}
+.slot_info {
+  padding: 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content_container {
+  height: 0rem;
+  overflow: hidden;
+}
+
+.toggle_btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  min-height: 2rem;
+  border-radius: 0.4rem;
+  background-color: rgb(128, 128, 128, 0.8);
+}
+
+.bar {
+  position: absolute;
+  display: block;
+  width: 1.3rem;
+  height: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.bar.a {
+  transform: rotate(45deg);
+}
+
+.bar.b {
+  transform: rotate(-45deg);
+  right: 0;
+}
+
+.bar.a.active {
+  transform: rotate(-45deg);
+}
+
+.bar.b.active {
+  transform: rotate(45deg);
+}
+
+.content_container.active {
+  height: fit-content;
+  padding-bottom: 1rem;
+}
+
+.writing_container {
+  width: 95%;
+  margin: auto;
+  min-height: 20rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  white-space: pre-line;
+  line-height: 32px;
+  background-color: white;
+}
+
+.content_options {
+  display: grid;
+  padding: 0rem 1rem;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "deleteBtn gap downloadBtn";
+}
+
+.btn {
+  min-height: 2.5rem;
+  width: 7rem;
+  border-radius: 0.4rem;
+  padding: 0rem 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 1px 1px;
+}
+
+.btn.delete {
+  grid-area: deleteBtn;
+  background-color: #dc1414;
+}
+
+.btn.download {
+  grid-area: downloadBtn;
+  background-color: #00d81d;
+}
+
+@media (max-width : 360px) {
+    .writing_container {
+        font-size: 16px;
+    }
+}

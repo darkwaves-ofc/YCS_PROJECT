@@ -1,0 +1,110 @@
+.creator {
+  position: relative;
+  max-width: 50rem;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: #fff5f1;
+  margin-bottom: 5rem;
+}
+.heading {
+  display: grid;
+}
+.profileIcon {
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.topic {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.introBlock {
+  margin-bottom: 2rem;
+  min-height: 10rem;
+}
+.h3 {
+  margin-bottom: 1rem;
+}
+
+.nav_btns {
+  margin: auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.btn {
+  min-width: 6rem;
+  min-height: 2.6rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.navBtn {
+  background-color: #524fd5;
+}
+
+.saveBtn {
+  background-color: green;
+}
+.cancel_btn {
+  background-color: #dc1414;
+}
+
+.purpleTxt {
+  color: rgb(212, 10, 196);
+}
+
+.disclaimer {
+  color: red;
+  font-size: 0.8rem;
+}
+
+/*  input block */
+.inputBlock {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  min-height: 10rem;
+  max-width: 40rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.inputLabel {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.txtInput {
+  width: 100%;
+  max-width: 25rem;
+  padding: 0.1rem 0.5rem;
+  margin: auto;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.warning {
+  display: none;
+}
+.warning.active {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.previewBlock {
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.previewList {
+  padding-left: 2rem;
+}
+
+.previewList > li {
+  margin-bottom: 1rem;
+}

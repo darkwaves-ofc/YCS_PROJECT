@@ -1,0 +1,81 @@
+.header {
+  width: 100%;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  background-color: #fff5f1;
+}
+
+img.logo {
+  width: 6rem;
+  margin: 1rem 1rem 0rem 2rem;
+  cursor: pointer;
+}
+
+.topic {
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogon {
+  font-family: "Sevillana", cursive;
+  color: rgb(226, 167, 4);
+  transform: translateX(3rem);
+}
+
+.profileIcon {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.profileIconImg {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.profileLinks {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -0.5rem;
+  min-width: 11rem;
+  min-height: 6.375rem;
+  min-height: 4rem;
+  background-color: white;
+}
+
+.profileLinks.active {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.profileLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.companyName {
+  font-size: 2.7rem;
+  font-family: "Chivo Mono", monospace;
+  font-style: italic;
+  padding-top: 1rem;
+}
+
+.navBar {
+  margin-top: 2rem;
+  grid-area: 2 / 1 / 2 / 4;
+}
+
+
+
+

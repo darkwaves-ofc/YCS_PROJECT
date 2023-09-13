@@ -1,0 +1,67 @@
+.displayer {
+    max-width: 30rem;
+    margin: auto;
+    padding: 2rem 0rem;
+    display: grid;
+    background-color: #FFF5F1;
+    margin-bottom: 5rem;
+}
+
+.profileIcon {
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.topic {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.detailContainer {
+    list-style: square;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+}
+.detail {
+    margin-bottom: 1rem;
+}
+.actionBtns {
+    margin: 0rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logoutBtn spaceBetween editBtn closeBtn";
+}
+
+.logoutBtn {
+    grid-area: logoutBtn;
+    background-color: rgb(255, 0, 0);
+}
+.editBtn {
+    grid-area: editBtn;
+    margin-right: 0.6rem;
+    background-color: rgb(90, 137, 230);
+}
+.closeBtn {
+    grid-area: closeBtn;
+    background-color: rgb(58, 224, 58);
+}
+
+.logoutBtn,.editBtn,.closeBtn {
+    padding: 0rem 0.5rem;
+    min-height: 2rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 32rem) {
+    .displayer {
+        margin: 0rem 2rem;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .displayer {
+        margin: 0rem 1rem;
+    }
+}

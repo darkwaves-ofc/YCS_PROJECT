@@ -1,0 +1,29 @@
+.writeButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+.writeButton {
+    background-color: #524FD5;
+    color: #ffffff;
+    border: none;
+    width: 6rem;
+    min-height: 2.4rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+
+.form {
+    display: grid;
+    grid-template-columns: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #FFF5F1;
+
+}
+
+.inputGap {
+    width: 100%;
+    height: 1.5rem;
+}

@@ -1,0 +1,10 @@
+.input_container {
+    display: flex;
+}
+.digitInput {
+    max-width: 2.5rem;
+    min-height: 3rem;
+    margin: 0rem 0.2rem;
+    text-align: center;
+    font-size: 2rem;
+}

@@ -1,0 +1,86 @@
+.editor {
+    position: relative;
+    max-width: 30rem;
+    margin: auto;
+    padding: 2rem 0rem;
+    display: grid;
+    background-color: #FFF5F1;
+    margin-bottom: 5rem;
+}
+.profileIcon {
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.topic {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.h2 {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+.editorForm {
+    padding: 0rem 2rem;
+    margin-bottom: 4rem;
+}
+.txtInput {
+    min-height: 2.25rem;
+    width: 100%;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+
+}
+
+.inputBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+}
+.actionBtns {
+    margin: 0rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logoutBtn spaceBetween closeBtn";
+}
+
+.cancelBtn {
+    grid-area: logoutBtn;
+    background-color: rgb(255, 0, 0);
+}
+.doneBtn {
+    grid-area: editBtn;
+    margin-right: 0.6rem;
+    background-color: rgb(90, 137, 230);
+}
+.saveBtn {
+    grid-area: closeBtn;
+    background-color: rgb(58, 224, 58);
+}
+
+.cancelBtn,.doneBtn,.saveBtn {
+    min-width: 5rem;
+    min-height: 2rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 32rem) {
+    .editor {
+        margin: 0rem 2rem;
+    }
+}
+
+@media (max-width: 290px) {
+    .editor {
+        margin: 0rem 1rem;
+    }
+    .cancelBtn,.doneBtn,.saveBtn {
+        min-width: 0rem;
+        padding: 0rem 0.5rem;
+    }
+    .saveBtn {
+        margin-right: 0.1rem;
+    }
+}

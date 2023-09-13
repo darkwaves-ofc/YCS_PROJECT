@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.h3 {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.p {
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  color: #9592a3;
+}
+.iconContainer {
+  margin-bottom: 1rem;
+}
+
+.featureContainer {
+  margin: 0rem 1rem 3rem 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 300px) {
+  .icon {
+    max-width: 5rem;
+  }
+}
+

@@ -1,0 +1,89 @@
+.displayer {
+  position: relative;
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: #fff5f1;
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+.reqInfoList {
+  margin: 0rem 0rem 1rem 1rem;
+}
+.reqInfo {
+  margin-bottom: 1rem;
+}
+.topic {
+  background-color: white;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.resultViewer {
+  margin-bottom: 2rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0rem 1rem 1rem 2rem;
+  max-height: 80vh;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.resultOptions {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "saveBtn gap downloadBtn" "noBtn gap deleteBtn";
+  row-gap: 2rem;
+  margin: 0rem 1rem;
+}
+
+.actionBtn {
+  min-height: 2.5rem;
+  width: 7rem;
+  border-radius: 0.4rem;
+  padding: 0rem 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 1px 1px;
+}
+
+.deleteBtn {
+  background-color: #dc1414;
+  grid-area: deleteBtn;
+}
+
+.downloadBtn {
+  background-color: #00d81d;
+  grid-area: downloadBtn;
+}
+
+.saveBtn {
+  background-color: rgb(36, 160, 237);
+  grid-area: saveBtn;
+  margin-right: 1rem;
+}
+
+.actionBtn:hover {
+  box-shadow: 3px 3px;
+}
+
+.loader {
+  position: relative;
+  margin-bottom: 2rem;
+  min-height: 20rem;
+}
+
+@media (min-width: 300px) {
+  .displayer {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 650px) {
+    .resultOptions {
+        grid-template-columns: auto 1fr auto auto;
+        grid-template-areas: "deleteBtn gap saveBtn downloadBtn";
+    }
+}

@@ -1,0 +1,18 @@
+.selectable_slot {
+    margin-bottom: 1rem;
+    background-color: wheat;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+}
+
+.selected_slot {
+    border: 3px solid rgb(81, 0, 128);
+}
+
+.slot_id {
+    font-weight: bold;
+}
+.slot_content {
+    font-size: 1.1rem;
+    color: rgb(70, 70, 70);
+}

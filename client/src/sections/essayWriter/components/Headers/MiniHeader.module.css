@@ -1,0 +1,61 @@
+.header {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;  
+    background-color: #FFF5F1;
+    align-items: center;
+}
+
+img.logo {
+    width: 4rem;
+    margin: 0rem 1rem;
+}
+
+
+.profileIcon {
+    position: relative;
+    align-self: self-start;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 1rem;
+}
+
+.profileIconImg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.profileLinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -0.5rem;
+    min-width: 11rem;
+    min-height: 6.375rem;
+    min-height: 4rem;
+    background-color: white;
+}
+
+.profileLinks.active {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+
+}
+
+.profileLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.navBar {
+    align-self: self-start;
+    margin-top: 1rem;
+}

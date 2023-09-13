@@ -1,0 +1,27 @@
+.downloadContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10rem;
+    margin: 0rem 1rem;
+    padding: 2rem 0.5rem;
+    border-radius: 1rem;
+    background-color: #FFF5F1;
+  }
+  
+  .downloadPrompt {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .downloadBtn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.7rem;
+    background-color: rgb(14, 204, 55);
+  }
+
+  .downloadBtn:hover {
+  box-shadow: 2px 2px;
+  }

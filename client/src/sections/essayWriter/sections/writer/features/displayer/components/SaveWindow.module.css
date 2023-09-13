@@ -1,0 +1,65 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.save_window {
+  position: absolute;
+  top: 10vh;
+  max-height: 85vh;
+  overflow: scroll;
+  margin: 0rem 1rem;
+  justify-self: center;
+  min-height: 30rem;
+  border-radius: 0.7rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #fff5f1;
+}
+/* to provide a position relative  */
+.content_wrapper {
+
+}
+
+.heading {
+  text-align: center;
+  margin: 2rem 0rem 3rem;
+  font-size: 1.5rem;
+}
+.drive_name {
+  font-size: 2rem;
+  color: rgb(99, 44, 187);
+}
+
+.instruction {
+  margin: 0rem 1rem 2rem;
+}
+
+.slots_list {
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+.action_btn_row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  margin-bottom: 1rem;
+  min-height: 2rem;
+  width: 6rem;
+  border-radius: 0.2rem;
+  padding: 0rem 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 1px 1px;
+}
+.cancel_btn {
+  background-color: #dc1414;
+}
+.save_btn {
+  background-color: rgb(36, 160, 237);
+}

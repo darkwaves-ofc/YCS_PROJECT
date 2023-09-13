@@ -1,0 +1,20 @@
+body {
+    background-color: #ffffff;;
+}
+
+
+.base {
+    max-width: 30rem;
+    min-height: 35rem;
+    margin : 3rem auto;
+    border-radius: 1rem;
+    background-color: #FFF5F1;
+    position: relative;
+}
+
+
+@media (min-width: 1000px) {
+    .base {
+        max-width: 92vw;
+    }
+}
