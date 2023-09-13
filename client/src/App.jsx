@@ -3,6 +3,8 @@ import { AuthContextProvider } from "./context/AuthContext";
 import "./App.css";
 import Home from "./pages/Home/Home";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import AuthPage from "./pages/Auth/Auth";
+import Header from "./pages/components/Header/Header";
 
 // import HomePage from "./sections/home/HomePage.js";
 // import EssayWriterRoutes from "./sections/essayWriter/EssayWriterRoutes.js";
@@ -15,8 +17,10 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
+          <Route path="/auth/*" element={<AuthPage />} />
         </Routes>
       </Router>
     </div>

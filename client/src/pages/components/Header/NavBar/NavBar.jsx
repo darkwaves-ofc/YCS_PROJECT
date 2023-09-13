@@ -38,24 +38,24 @@ const NavBar = (props) => {
         </NavLink>
 
         {/* Only for Non-loged users */}
-        {loggedIn && (
-          <NavLink style={styleActive} to="/login">
+        {!loggedIn && (
+          <NavLink style={styleActive} to="/auth/login">
             <li className="navItem">Login</li>
           </NavLink>
         )}
-        {loggedIn && (
-          <NavLink style={styleActive} to="/register">
+        {!loggedIn && (
+          <NavLink style={styleActive} to="/auth/signup">
             <li className="navItem">Register</li>
           </NavLink>
         )}
 
         {/* Only for loged users */}
-        {!loggedIn && (
+        {loggedIn && (
           <NavLink style={styleActive} to="/e_drive">
             <li className="navItem">eDrive</li>
           </NavLink>
         )}
-        {!loggedIn && (
+        {loggedIn && (
           <div className="profileIcon" onClick={toggleLinks}>
             <img
               className="profileIconImg"

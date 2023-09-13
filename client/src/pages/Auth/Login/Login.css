@@ -1,0 +1,58 @@
+
+.topic  {
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+
+.inputLable{
+    margin-bottom: 1rem;
+    max-width: 20rem;
+}
+
+.txtInput {
+    min-height: 2rem;
+    min-width: 10rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgb(39, 39, 39);
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+
+.inputBlock > p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(228, 15, 15);
+}
+
+.incorrectWarning {
+    margin-top: 1rem;
+}
+
+
+.inputBlock {
+    max-width: 22rem;
+    padding: 0rem 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+
+
+.submitBtn {
+    margin-bottom: 1rem;
+    min-width: 12rem;
+    min-height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #524FD5;
+}
+.submitRow {
+    text-align: center;
+    padding: 1rem 0rem 2rem 0rem;
+}

@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 // import Header from "./components/Header/Header";
 import "./Home.css";
-import Header from "./components/header/Header";
 
 const Home = () => {
   return (
     <div className="Home">
-      <Header/>
       <div className="body">
         <div className="description">
           <p>
