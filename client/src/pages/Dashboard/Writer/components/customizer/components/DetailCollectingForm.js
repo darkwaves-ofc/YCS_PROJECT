@@ -1,13 +1,14 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
-import { AuthContext } from "../../../../../../context/AuthContext";
-import { WriterContext } from "../../../context/writerContext";
-import getProfileData from "../../../../../Auth/profile/functions/getProfileData";
-import "./DetailCollectingForm.css";
-import TopicInput from "./inputs/TopicInput/TopicInput";
-import WordCountInput from "./inputs/WordsCountInput/WordsCountInput";
-import EssayTypeInput from "./inputs/EssayTypeInput/EssayTypeInput";
+import { AuthContext } from "../../../../../../../AuthContext.js";
+import { WriterContext } from "../../../WriterContext.js";
+import getProfileData from "../../../../../../authentication/features/profile/functions/getProfileData.js";
+
+import classes from "./DetailCollectingForm.module.css";
+import TopicInput from "./inputs/TopicInput.js";
+import WordCountInput from "./inputs/WordsCountInput.js";
+import EssayTypeInput from "./inputs/EssayTypeInput.js";
 
 const DetailCollectingForm = () => {
   const [profileData, setProfileData] = useState({});
@@ -59,12 +60,12 @@ const DetailCollectingForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <form onSubmit={handleSubmit} className={classes.form}>
       <TopicInput condition={true} />
       <WordCountInput />
       <EssayTypeInput />
-      <div className="writeButtonContainer">
-        <button type="submit" className="writeButton">
+      <div className={classes.writeButtonContainer}>
+        <button type="submit" className={classes.writeButton}>
           write
         </button>
       </div>

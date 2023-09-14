@@ -27,7 +27,7 @@ const NavBar = (props) => {
         <NavLink style={styleActive} to="/">
           <li className="navItem">Home</li>
         </NavLink>
-        <NavLink style={styleActive} to="/essaywriter">
+        <NavLink style={styleActive} to="/dashboard/ewriter">
           <li className="navItem">essay&nbsp;writer</li>
         </NavLink>
         <NavLink style={styleActive} to="/aboutus">

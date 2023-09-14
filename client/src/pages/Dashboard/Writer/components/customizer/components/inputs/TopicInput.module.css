@@ -1,0 +1,29 @@
+.condition {
+  justify-self: center;
+  font-size: 0.8rem;
+  margin: 0.5rem 2rem;
+  color: crimson;
+  font-weight: bold;
+}
+
+.topicInput {
+  width: 100%;
+  max-width: 40rem;
+  justify-self: center;
+  margin: 0rem 2rem;
+  padding: 0rem 1rem;
+  font-size: 1.5rem;
+  min-height: 2rem;
+  border: solid rgb(128, 128, 128, 0.5) 1px;
+  text-align: center;
+}
+
+.topic {
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+/* common */
+.prompt {
+  margin-bottom: 1.5rem;
+}

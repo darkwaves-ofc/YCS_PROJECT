@@ -1,0 +1,16 @@
+.complexity_label {
+    font-size: 1.2rem;
+}
+
+.complexity_select {
+    min-width: 7rem;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.complexity_input {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 11.5rem auto 1fr;
+}

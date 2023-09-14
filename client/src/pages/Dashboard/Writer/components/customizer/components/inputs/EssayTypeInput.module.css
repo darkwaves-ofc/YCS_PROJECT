@@ -1,0 +1,28 @@
+.essay_type_input {
+    margin-bottom: 2rem;
+}
+.prompt {
+    margin-bottom: 1.5rem;
+    font: 1.2rem;
+}
+.radio{
+    display: flex;
+}
+
+.radioLable {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.essay_type_radios{
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.sub_select {
+    margin-left: 1rem;
+    min-height: 5rem;
+}

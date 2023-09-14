@@ -1,30 +1,16 @@
-import { lazy,Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
-const RegisterPage = lazy(() =>
-  import("./pages/RegisterPage.js")
-);
-const LoginPage = lazy(() =>
-  import("./pages/LoginPage.js")
-);
-const LogoutPage = lazy(() =>
-  import("./pages/LogoutPage.js")
-);
-const VerifyGmail = lazy(() =>
-  import("./pages/VerifyGmailPage.js")
-);
+const RegisterPage = lazy(() => import("./pages/RegisterPage.js"));
+const LoginPage = lazy(() => import("./pages/LoginPage.js"));
+const LogoutPage = lazy(() => import("./pages/LogoutPage.js"));
+const VerifyGmail = lazy(() => import("./pages/VerifyGmailPage.js"));
 
-const ProfilePage = lazy(() =>
-  import("./pages/ProfilePage.js")
-);
+const ProfilePage = lazy(() => import("./pages/ProfilePage.js"));
 
-const CreateProfilePage = lazy(() =>
-  import("./pages/createProfilePage.js")
-);
+const CreateProfilePage = lazy(() => import("./pages/createProfilePage.js"));
 
-const RedirectPage = lazy(() =>
-  import("./pages/RedirectPage.js")
-);
+const RedirectPage = lazy(() => import("./pages/RedirectPage.js"));
 
 const AuthRoutes = () => {
   return (

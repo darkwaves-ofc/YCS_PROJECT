@@ -21,7 +21,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/dashboard" exact element={<Dashboard />} />
+          <Route path="/dashboard/*" exact element={<Dashboard />} />
           <Route path="/auth/*" element={<AuthPage />} />
         </Routes>
       </Router>
