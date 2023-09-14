@@ -4,7 +4,8 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import AuthPage from "./pages/Auth/Auth";
-import Header from "./pages/components/Header/Header";
+import Header from "./components/Header/Header";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 // import HomePage from "./sections/home/HomePage.js";
 // import EssayWriterRoutes from "./sections/essayWriter/EssayWriterRoutes.js";
@@ -20,6 +21,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
+          <Route path="/dashboard" exact element={<Dashboard />} />
           <Route path="/auth/*" element={<AuthPage />} />
         </Routes>
       </Router>

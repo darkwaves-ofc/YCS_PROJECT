@@ -1,0 +1,14 @@
+.featureContainer {
+  margin: 0rem 1rem 3rem 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.featureContainer .iconContainer {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 300px) {
+  .featureContainer .icon {
+    max-width: 5rem;
+  }
+}
